@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Operations</title>
+</head>
+<body>
+    <h2>Results:</h2>
+    <script>
+        // 1. Take two numbers as input using prompt
+        // parseFloat ensures inputs are treated as numbers, not strings
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+
+        //2. Perform calculations
+        let sum = num1 + num2;
+        let difference = num1 - num2;
+        let product = num1 * num2;
+
+        //3. Display results on the webpage
+        document.write("<p>First Number: " + num1 + "</p>");
+        document.write("<p>Second Number: " + num2 + "</p>");
+        document.write("<p><strong>Sum:</strong> " + sum + "</p>");
+        document.write("<p><strong>Difference:</strong> " + difference + "</p>");
+        document.write("<p><strong>Product:</strong> " + product + "</p>");
+    </script>
+</body>
+</html>
