@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Welcome with unique id-->
+    <h1 id="title">Welcome!</h1>
+
+    <!--Button to trigger Java Script-->
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        //Functionc thst run when button is clicked 
+        function changeText() {
+
+            //step1: select elemnent using getelementById
+            let heading = document.getElementById("title");
+
+            //step2: chhange the text content
+            heading.innerText = "Hello students! Welcome to Java Script";
+
+            //step3: change style dynamically
+            heading.style.color = "blue";
+        }
+    </script>
+
+</body>
+</html>
