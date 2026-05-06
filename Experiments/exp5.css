@@ -1,0 +1,74 @@
+/* Glass effect card */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+/* Result Title */
+.result-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Table Styling */
+.emp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.emp-table th, .emp-table td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+.emp-table th {
+    background: #222;
+}
+/* Salary badges */
+.badge-high {
+    color: #00ff88;
+    font-weight: bold;
+}
+.badge-low {
+    color: #ccc;
+}
+/* Stat Cards */
+.stat-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.stat-label {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+/* Messages */
+.message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.success {
+    background: rgba(0,255,100,0.1);
+    color: #00ff88;
+}
+.error {
+    background: rgba(255,0,0,0.1);
+    color: #ff4d4d;
+}
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+/* Utility */
+.hidden {
+    display: none;
+}
