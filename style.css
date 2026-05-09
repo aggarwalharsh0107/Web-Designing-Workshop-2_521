@@ -1,0 +1,455 @@
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:#ffffff;
+  color:#0b3558;
+  overflow-x:hidden;
+}
+
+.navbar{
+  width:100%;
+  padding:22px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  color:#006bff;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#1d3557;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#006bff;
+}
+
+.nav-buttons{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.login{
+  text-decoration:none;
+  color:#1d3557;
+  font-weight:600;
+}
+
+.nav-buttons button,
+.features button,
+.price-card button,
+.footer-buttons button{
+  padding:12px 24px;
+  border:none;
+  background:#006bff;
+  color:#fff;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.nav-buttons button:hover,
+.features button:hover,
+.price-card button:hover,
+.footer-buttons button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:60px 7%;
+  gap:50px;
+}
+
+.hero-left{
+  flex:1;
+}
+
+.hero-left h1{
+  font-size:68px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero-left p{
+  color:#5c708a;
+  font-size:18px;
+  margin-bottom:30px;
+  max-width:500px;
+}
+
+.signup-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.signup-buttons button{
+  width:280px;
+  padding:16px;
+  border-radius:12px;
+  border:2px solid #dbe5f0;
+  background:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.signup-buttons button:hover{
+  transform:translateX(8px);
+  border-color:#006bff;
+}
+
+.hero-right{
+  flex:1;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  width:500px;
+  background:#fff;
+  border-radius:25px;
+  padding:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.1);
+  position:relative;
+  z-index:2;
+}
+
+.calendar-top{
+  height:20px;
+  width:120px;
+  background:#cce0ff;
+  border-radius:20px;
+  margin-bottom:25px;
+}
+
+.calendar-body{
+  display:flex;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.calendar-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:10px;
+  flex:1;
+}
+
+.calendar-grid span{
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.calendar-grid span:hover{
+  background:#006bff;
+  color:#fff;
+}
+
+.meeting-slots{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.meeting-slots button{
+  padding:12px 16px;
+  border:none;
+  background:#eef5ff;
+  border-radius:10px;
+  color:#006bff;
+  font-weight:600;
+}
+
+.shape{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(10px);
+}
+
+.blue{
+  width:300px;
+  height:300px;
+  background:#0077ff;
+  right:-50px;
+  bottom:-50px;
+  opacity:0.15;
+}
+
+.pink{
+  width:200px;
+  height:200px;
+  background:#ff00c8;
+  left:-20px;
+  top:-30px;
+  opacity:0.15;
+}
+
+.trusted,
+.features,
+.integration,
+.pricing,
+.stats,
+.security,
+footer{
+  padding:100px 7%;
+}
+
+.trusted p,
+.features p,
+.integration p{
+  color:#5c708a;
+}
+
+.brands{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  margin-top:40px;
+  flex-wrap:wrap;
+  font-weight:700;
+}
+
+.features{
+  text-align:center;
+}
+
+.features h2,
+.integration h2,
+.pricing h2,
+.stats h2,
+.security h2,
+footer h2{
+  font-size:54px;
+  margin-bottom:20px;
+}
+
+.integration{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:60px;
+}
+
+.integration-grid{
+  flex:1;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.app-card{
+  padding:30px;
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  text-align:center;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.app-card:hover{
+  transform:translateY(-10px);
+}
+
+.pricing-cards,
+.stats-grid{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.price-card,
+.stat-card{
+  padding:35px;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.price-card:hover,
+.stat-card:hover{
+  transform:translateY(-10px);
+}
+
+.active{
+  border:2px solid #006bff;
+}
+
+.stat-card h3{
+  font-size:52px;
+  color:#006bff;
+  margin-bottom:10px;
+}
+
+.security{
+  text-align:center;
+}
+
+.security-icons{
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.icon{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:#eef5ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#006bff;
+}
+
+footer{
+  background:#f7f9fc;
+}
+
+.footer-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:70px;
+  gap:30px;
+}
+
+.outline{
+  background:transparent !important;
+  border:2px solid #006bff !important;
+  color:#006bff !important;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+}
+
+.footer-grid h4{
+  margin-bottom:20px;
+}
+
+.footer-grid a{
+  display:block;
+  margin-bottom:12px;
+  color:#5c708a;
+  text-decoration:none;
+}
+
+.footer-grid a:hover{
+  color:#006bff;
+}
+
+.copyright{
+  margin-top:60px;
+  text-align:center;
+  color:#5c708a;
+}
+
+@media(max-width:1000px){
+
+  .hero,
+  .integration,
+  .footer-top{
+    flex-direction:column;
+  }
+
+  .hero-left h1,
+  .features h2,
+  .integration h2,
+  .pricing h2,
+  .stats h2,
+  .security h2,
+  footer h2{
+    font-size:42px;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .integration-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+
+  .hero-left h1{
+    font-size:36px;
+  }
+
+  .features h2,
+  .integration h2,
+  .pricing h2,
+  .stats h2,
+  .security h2,
+  footer h2{
+    font-size:32px;
+  }
+
+  .calendar-body{
+    flex-direction:column;
+  }
+
+  .integration-grid{
+    grid-template-columns:1fr;
+  }
+
+  .signup-buttons button{
+    width:100%;
+  }
+}
+```
+
