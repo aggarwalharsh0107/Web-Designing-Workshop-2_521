@@ -230,14 +230,14 @@ if (marks >= 33 || marks >= 80) {
 }
 
 
-result is pass 
+// result is pass 
 
 let marks = 75;
 if ((marks > 33 && marks <=80) || !failed){
     console.log("pass");
 }// result is true 
 
-practice problem..
+// practice problem..
 let str = "apple";
 
 if ( str[0] === "a" && str.length > 3) {
@@ -246,7 +246,7 @@ if ( str[0] === "a" && str.length > 3) {
     console.log("not a good stringe");
 }
 
-truthy and falsy values 
+// truthy and falsy values 
 if (true) {
     console.log("it has true value");
 }else {
