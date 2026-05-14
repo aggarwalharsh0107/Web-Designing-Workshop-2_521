@@ -227,14 +227,17 @@ let marks = 75 ;
 if (marks >= 33 || marks >= 80) {
     console.log("pass");
     console.log("A++");
-}// result is pass 
+}
+
+
+result is pass 
 
 let marks = 75;
 if ((marks > 33 && marks <=80) || !failed){
     console.log("pass");
 }// result is true 
 
-// practice problem..
+practice problem..
 let str = "apple";
 
 if ( str[0] === "a" && str.length > 3) {
@@ -242,6 +245,103 @@ if ( str[0] === "a" && str.length > 3) {
 }else {
     console.log("not a good stringe");
 }
+
+truthy and falsy values 
+if (true) {
+    console.log("it has true value");
+}else {
+    console.log("it has false values");
+}
+
+if (false) {
+    console.log("it has true value");
+}else {
+    console.log("it has false value")
+}
+
+if (0) 
+    { console.log("it has true value");
+}else {
+    console.log("it has false value")
+}
+
+if ("") {
+    console.log("it has true value");
+}else {
+    console.log("it has false value")
+}
+
+
+if (string) {
+    console.log("string is not empty");
+} else {
+    console.log("string is empty");
+}
+
+let num = 0;
+if (num) {
+    console.log("num is not equal to 0 ");
+} else {
+    console.log("num is equal to 0");
+}
+
+// switch based questions 
+let color = "red";
+switch(color) {
+    case "red":
+        console.log("stop");
+        break;
+    case "yellow":
+        console.log("slow down");
+        break;
+    case "green":
+        console.log("go");
+        break;
+    default:
+        console.log("broken light");
+}
+
+// practice question 
+// question is using switch print the days of thew weak 
+let day = 1;
+switch(day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    default :
+    console.log("Wrong Day")
+    }
+
+// use of alert and prompt 
+
+alert("something is wrong!");
+
+
+alert("this is a simple alert");
+console.log("this is a simple log");
+console.error("this is an error msg");
+
+// use of prompt technology 
+// prompt technology is based  used here and i
+prompt("Enter your name : ");
+let firstName = prompt("Enter Your Name  :");
+console.log(firstName)
+
 
 
 
