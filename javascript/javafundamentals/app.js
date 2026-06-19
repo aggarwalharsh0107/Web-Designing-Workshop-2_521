@@ -1,31 +1,4 @@
-// var name="John Doe";
-// var age=30;
-// var isEmployed= true;
-// console.log(name);
-// console.log(age);
-// console.log(isemployed);
-// let age=30;
-// console.log(age);
-
-// if(true){
-//     var age=30;
-// }
-// console.log(age);
-
-// const PI=3.14;
-// console.log(PI);
-// PI= 3.14159; //this will cause an error
-// console.log(PI);
-//consatnt variable can not be reassigned .
-//type of operator
-
-//let name = "Priya"
-//let age1 = 20;
-//console.log("my name is" + name + "and my age is " + age1);
-//console.log(`My name is ${name} and my age is ${age1}`)
-
-
-//practise java script 
+/ 
 
 console.log("Hello World From Apna College!");
 //Hello World From Apna College!
@@ -341,6 +314,95 @@ console.error("this is an error msg");
 prompt("Enter your name : ");
 let firstName = prompt("Enter Your Name  :");
 console.log(firstName)
+
+//when ever you see () in your java script it means  some method is being used ..
+
+// example of first string method which is trim method 
+
+let password = prompt("set your password");
+let newPass = password.trim();
+console.log(newPass)
+
+// trim or any other string method do not remove the space from the strimg it create new string and then remove the spaces. 
+let password = prompt("set your password");
+let newPass = password.trim();
+console.log(password)
+
+//code to convert in uppercase and in the lowercase .
+// example 
+let name = "Apna College";
+let msg = "error";
+console.log(msg.toUpperCase());
+
+// string method with arguments.
+//method = index of method we used here 
+let msg = "IlOVECoding";
+msg.indexOf("Love");
+// we get here 1
+msg.indexOf("love");
+// we get here -1
+msg.indexOf("o");
+// we get here 2 
+
+// now we apply method chaining 
+let msg = " hello ";
+let newMsg = msg.trim();
+console.log("after trim : ", newMsg);
+newMsg = newMsg.toUpperCase();
+console.log("after uppercase : ", newMsg);
+
+// here we can also short cut method instead of this 
+let newMsg = msg.trim().toUpperCase();
+console.loge(N)
+
+// now we practice about slice method 
+let msg = "hello";
+console.log(msg.slice(0, 4));
+
+let msg = "apnacollege";
+console.log(msg.slice(0,4));
+
+console.log(msg.slice(-2));// so here it is print length - number which is equal to 9
+// so numbers after 9 will going to be print 
+
+// Repeat method 
+
+let msg = "ILoveCoding";
+messaage.repeat(2);// here we get ILoveCodingILoveCoding
+
+let fruit ="Mango";
+fruit.repeat(3);//here we get MangoMango
+
+// practice question number 1
+let msg = "hello!";
+console.log(msg.trim().toUpperCase());
+
+// practice question number 2 
+let name = "ApnaCollege";
+name.slice(4,9);// here the value we get 'colle'
+name.indexof("na"); // here we get the index 2 
+name.replace("Apna","Our");// here we get the new string as 'OurCollege'
+
+// practice question number 3 
+let name = "ApnaCollege";
+name.slice(4).replace('l' , 't');// we get the string cotlege
+
+let newstr = name.slice(4).replace('l' , 't');//  here our newstring will create 
+newstr.replace('l' ,'t'); // here we will get 'cottege'
+
+// instead of writting muktiple codes we can also write it as 
+name.slice(4.).replace('l' , 't').repeat('l' , 't'); // we get code in one single line .
+
+
+
+
+
+
+
+
+
+
+
 
 
 
