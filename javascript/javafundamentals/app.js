@@ -393,6 +393,26 @@ newstr.replace('l' ,'t'); // here we will get 'cottege'
 // instead of writting muktiple codes we can also write it as 
 name.slice(4.).replace('l' , 't').repeat('l' , 't'); // we get code in one single line .
 
+// usually we store values as
+let student1 = "aman";
+let student2 = "shradha";
+let student3 = "rajat";
+
+// by using the array we can also store values as in the form
+let students = ["aman" , "shradha" , "rajat"];
+
+// for accesing value at a particular index 
+let name = "Harsh";
+name[3];// here we will get value s 
+name[2];// here we will get the value r 
+
+// in javascript w can also create mixed array 
+let info = ["aman" , 25 , 6.1];
+info.length ; // by this we wil get the length of the array 
+info[2];// here we will get the value 6.1 
+
+
+
 
 
 
