@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Result Card</h1>
+
+    <input type="text" id="name" placeholder="Enter Student Name">
+
+    <input type="number" id="sub1" placeholder="Math Marks">
+    <input type="number" id="sub2" placeholder="Science Marks">
+    <input type="number" id="sub3" placeholder="English Marks">
+    <input type="number" id="sub4" placeholder="Computer Marks">
+    <input type="number" id="sub5" placeholder="Physics Marks">
+
+    <button onclick="generateResult()">Generate Result</button>
+
+    <div id="result">
+    <h3>Result Card</h3>
+
+    <p><strong>Name:</strong> <span id="studentName"></span></p>
+
+    <p><strong>Total Marks:</strong> <span id="totalMarks"></span></p>
+
+    <p><strong>Percentage:</strong> <span id="percentage"></span></p>
+
+    <p><strong>Grade:</strong> <span id="grade"></span></p>
+
+    <p><strong>Status:</strong> <span id="status"></span></p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
