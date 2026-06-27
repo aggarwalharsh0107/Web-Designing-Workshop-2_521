@@ -411,6 +411,31 @@ let info = ["aman" , 25 , 6.1];
 info.length ; // by this we wil get the length of the array 
 info[2];// here we will get the value 6.1 
 
+// arrays are mutable 
+let fruits =["mango" , "apple" , "litchi"];// undefined 
+fruits //['mango' , 'banana' , 'litchi']
+fruits[0] = "banana";
+fruits // ['banana' , 'apple' , 'litchi'];
+
+// practice question  based on array methods 
+let months = ["january" , "july" , "march" , "august"];
+months.shift("january");
+months.shift("july");
+months.unshift("june");
+months.unshift("july");
+//months = ['july' , 'june' , 'march' , 'august']
+
+let primary = ["red", "yellow", "blue"];
+let secondary = ["orange", "green", "voilet"];
+primary.concat(secondary);// here we get ['red' 'yellow' 'blue' 'orange' 'green' 'voilet']
+// we can also write it as 
+secondary.concat(primary);// ['orange' 'green' 'voilet' 'red' 'yellow' 'blue']
+primary.reverse("red","yellow","blue");// here we will get ['blue' 'yellow' 'red']
+primary.slice(1,3);// copy the values of primary array into  a new array but from 1 to 3 excluding the 3
+
+
+
+
 
 
 

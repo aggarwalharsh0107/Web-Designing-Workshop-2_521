@@ -7,7 +7,7 @@ function Subtotal() {
   const [{ basket }] = useStateValue();
   return (
     <div className="subtotal">
-      <CurrencyFormat
+      <NumericFormat
         renderText={(value) => (
           <>
             <p>
@@ -18,11 +18,10 @@ function Subtotal() {
             </small>
           </>
         )}
-        decimalScale={2}
         value={getBasketTotal(basket)}
-        displayType={"text"}
-        thousandSeparator={true}
-        prefix="₹"
+  displayType="text"
+  thousandSeparator
+  prefix="$"
       />
       <button>Proceed to Checkout</button>
     </div>
