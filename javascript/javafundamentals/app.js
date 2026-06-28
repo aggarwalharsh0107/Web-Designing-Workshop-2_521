@@ -1,4 +1,4 @@
-/ 
+
 
 console.log("Hello World From Apna College!");
 //Hello World From Apna College!
@@ -430,7 +430,7 @@ let secondary = ["orange", "green", "voilet"];
 primary.concat(secondary);// here we get ['red' 'yellow' 'blue' 'orange' 'green' 'voilet']
 // we can also write it as 
 secondary.concat(primary);// ['orange' 'green' 'voilet' 'red' 'yellow' 'blue']
-primary.reverse("red","yellow","blue");// here we will get ['blue' 'yellow' 'red']
+primary.reverse("red","yellow","blue");// here we will get ['blue' 'yellow' 'red']. commit by harsh aggarwal
 primary.slice(1,3);// copy the values of primary array into  a new array but from 1 to 3 excluding the 3
 
 
