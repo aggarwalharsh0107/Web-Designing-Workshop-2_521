@@ -432,6 +432,50 @@ primary.concat(secondary);// here we get ['red' 'yellow' 'blue' 'orange' 'green'
 secondary.concat(primary);// ['orange' 'green' 'voilet' 'red' 'yellow' 'blue']
 primary.reverse("red","yellow","blue");// here we will get ['blue' 'yellow' 'red']. commit by harsh aggarwal
 primary.slice(1,3);// copy the values of primary array into  a new array but from 1 to 3 excluding the 3
+// practice question 
+let months = ["january" , "july" , "march" , "august"];
+months.splice(0,2, "july" , "june");
+// it will retun us ['july' , 'june' ,'march' , 'august']. 
+
+// practice question 2
+let lang = ["c" , "c++" , "html" , "javascript" , "python" , "java" , "c#"];
+lang.push("sql");
+lang.reverse().indexof("javascript");
+// return the index value 4 . 
+
+// topic is array references
+let arr = ['a' , 'b'];
+let arrCopy = arr;
+// now arrCopy = ['a' , 'b']
+arrCopy.push('c');
+arr = ['a' , 'b' , 'c'];
+arr == arrCopy;
+// return true  
+
+// nested array
+let  nums = [[1 ,2] , [3 ,4] , [4 ,5]];
+let nums = [[2 , 4] , [3 , 6] , [4 ,8]];
+nums[0] // return [2,4]
+nums[0].length // it will give 2
+nums[0][0] // return 2
+
+// practice question based on tic tac toe 
+let game = [['x' , null , 'o'],[null , 'x' , null],['o' , null , 'x']];
+
+// assignment questions of lecture 3 
+// question 1 
+let arr = [7 ,9 ,0 ,-2];
+let n = 3;
+let ans = arr.slice(0,n);
+console.log(ans);
+
+//question 2 
+let arr = [7 ,9 , 0 , -2];
+let n = 3;
+let ans = arr.slice(arr.length-1);
+console.log(ans);
+
+
 
 
 
