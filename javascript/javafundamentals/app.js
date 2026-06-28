@@ -475,7 +475,13 @@ let n = 3;
 let ans = arr.slice(arr.length-1);
 console.log(ans);
 
-
+// question 3
+let str = prompt("please enter a string");
+if (str.length == 0) {
+    console.log("string is empty");
+}else {
+    console.log("string is  not empty");
+}
 
 
 
