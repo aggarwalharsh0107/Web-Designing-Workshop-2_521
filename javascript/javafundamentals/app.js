@@ -484,6 +484,16 @@ if (str.length == 0) {
 }
 
 
+// question 4 
+let str = "ApnaCollege";
+let idx = 3;
+if(str[idx] == str[idx].toLowerCase()) {
+    console.log("character is lowercase");
+}else {
+    console.log("character is not lowercase")
+}
+
+
 
 
 
