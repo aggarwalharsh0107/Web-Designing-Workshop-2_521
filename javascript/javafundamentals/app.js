@@ -666,9 +666,61 @@ let student = [ ["aman" , 95], ["shradha" , 94.4], ["karan" , 100]];
 for(let i=0;  i<student.length; i++) {
     console.log(`info of student #${i}`);
     for(let j=0; j<student[i].length; j++){
-        console.log(student[i][j]);
+        console.log(student[i][j])
     }
 }
+
+// use of for of loop 
+let fruits = ["mango" , "apple" , "banana" , "orange" , "litchi"];
+
+for(fruit of fruits) {
+    console.log(fruit);
+}
+
+for(char of "apnacollege") {
+    console.log(char);
+}
+
+// use of nested for of loop 
+let heroes = [["superman" , "batman" , "wonder woman"], ["spiderman" , "ironman" , "thor"]];
+
+for(list of heroes) {
+    for(name of list) {
+        console.log(name);
+    }
+}
+
+// create a todo app 
+let todo = [];
+let req = prompt("please enter your request");
+
+while(true) {
+    if(req == "quit") {
+        console.log("quitting  app");
+        break;
+    }
+
+    if(req == "list") {
+        console.log("--------");
+        for(let i=0; i<todo.length; i++) {
+            console.log(i, todo[i]);
+        }
+        console.log("------");
+    }else if(req == "add") {
+        let task = prompt("please enter the task you want to add");
+        todo.push(task);
+        console.log("task added");
+    }else if(req == "delete") {
+        let idx = prompt("please enter the task index");
+        todo.splice(idx, 1);
+        console.log("task deleted");
+    } else {
+        console.log("wrong request")
+    }
+    req = prompt("please enter your request");
+}
+
+
 
 
 
