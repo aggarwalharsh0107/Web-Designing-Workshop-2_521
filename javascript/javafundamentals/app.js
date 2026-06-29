@@ -493,6 +493,19 @@ if(str[idx] == str[idx].toLowerCase()) {
     console.log("character is not lowercase")
 }
 
+// question 6 
+let arr = ["hello", 'a', 23, 64, 99 ,-6];
+let item = 64;
+
+if(arr.indexof(item) != -1) {
+    console.log("element exizt in array");
+}else {
+    console.log("element doesn't exist in array");
+} 
+
+
+// noe from here we start loops 
+
 
 
 
