@@ -504,10 +504,171 @@ if(arr.indexof(item) != -1) {
 } 
 
 
-// noe from here we start loops 
+// noe from here we start loops .............................
 
 
 
+for(let i = 1; i<=5; i++){
+    console.log(i);
+}// here we print thr nummber forwward 
+
+// but if we have to print the number backward 
+for(let i = 10; i>=1; i--) {
+    console.log(i);
+}
+
+for(let i = 10; i>=1; i = i-3) {
+    console.log(i);
+}
+// here it will print the number in backward direction by the differnece of 3 
+// variavleds which are define inside the for loop are only applicable for loop not outside the loop 
+
+// question print all the odd numbers from 1 to 15  
+for(let i = 1; i<=15; i=i+2) {
+    console.log(i)
+} 
+
+console.log("backwards");
+
+for(let i=15; i>=1; i=i-2){
+    console.log(i);
+}
+
+// question print all the even numbers from 2 to 20
+for(let i=2; i<=10; i=i+2){
+    console.log(i);
+}
+console.log("backwards");
+
+for(let i=10; i>=2; i=i-2) {
+    console.log(i);
+}
+
+// infinite loops
+for( let i=1; ;i++) {
+   console.log(i);
+}// infinite loops can crash the website .
+
+
+// print the multiplication table for 5.
+for(let i=5; i<=50; i=i+5) {
+    console.log(i);
+}
+
+//if we have to print the table for any  number 
+let n = prompt("write your number");
+n = parseInt(n);
+
+for(let i=n; i<=n*10;i=i+n) {
+    console.log(i);
+}
+
+// nested loops 
+for(let i=1; i<=3; i++) {
+    console.log(`outer loop ${i}`)
+    for(let j=1; j<=3; j++){
+        console.log(j);
+    }
+}
+
+// while loop 
+let i=1;
+
+while(i<=5) {
+    console.log(i);
+    i++;
+}
+// if we want to run while loop in backward direction 
+let i=5;
+while(i>=1) {
+    console.log(i);
+    i--;
+}
+//print number upto 20 using while loop 
+let i=0;
+
+while(i<=20) {
+    console.log(i);
+    i++;
+}
+
+// create a game in which you gues your correct movie using while loop 
+const favMovie = "avatar";
+
+let guess = prompt("guess my favourite movie");
+while( (guess != favMovie) &&(guess !="quit")) {
+    guess = prompt("wrong guess. please try again");
+}
+
+if(guess == favMovie) {
+    console.log("congrats!!");
+}else {
+    console.log("you quite ")
+}
+
+// use of break  keyword
+let i=1;
+while(i<=5) {
+    if(i == 3) {
+        break;
+    }
+    console.log(i);
+    i++;
+} 
+
+console.log("we used break at 3");
+
+// we can go gues movie question like this also
+const favMovie = "avatar";
+
+let guess = prompt("guess my favourite movie");
+while(guess != favMovie)  {
+    if(guess == "quit") {
+        console.log("you quit");
+        break;
+    }
+    guess = prompt("wrong guess. please try again");
+}
+
+if(guess == favMovie) {
+    console.log("congrats!!");
+} 
+
+// using of loops with the array
+let fruits = ["mango" , "apple" , "banana" , "litchi" , "orange"];
+
+for(let i=0; i<fruit.length; i++)  {
+    console.log(i , fruits[i]);
+} 
+
+// for running the loops in array in backward 
+let fruits = ["mango" , "apple" , "banana" , "litchi" , "orange"];
+fruits.push("pineapple");
+for(let i=fruits.length-1; i>=0; i--) {
+    console.log(i , fruits[i]);
+}
+
+// nested loops using nested arrays 
+let heroes = [
+    ["ironman" , "spiderman" , "thor"]
+    ["superman" , "wonder woman" , "flash"]
+]
+
+for(let i=0; i<heroes.length; i++) {
+    console.log(i , heroes[i], heroes[i].length);
+    for(let j=0; j<heroes[i].length; j++) {
+        console.log(`j=${j},${heroes[i][j]}`);
+    }
+}
+
+// student result score 
+let student = [ ["aman" , 95], ["shradha" , 94.4], ["karan" , 100]];
+for(let i=0;  i<student.length; i++) {
+    console.log(`info of student #${i}`);
+    for(let j=0; j<student[i].length; j++){
+        console.log(student[i][j]);
+    }
+}
 
 
 
