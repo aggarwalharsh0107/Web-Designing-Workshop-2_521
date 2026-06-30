@@ -776,6 +776,94 @@ for(let i=0; i<=arr.length; i++) {
 }
 console.log(largest);
 
+// lecture  5th of js ............................................
+
+// we can store same data in objects as well as in array but in 
+//objects we have more clearity of data that for which this data is used for .........................
+
+let student = {
+    name: "shradha",
+    age: 23,
+    marks:94.4
+};
+// now if we create an array 
+let student2 = ["shradha" , 23, 94.4];
+// in object we dont have any specific order but in array we have a specific order 
+
+const item = {
+    price: 100.99,
+    discount: 50,
+    colors = ["red" , "pink"]
+};
+
+// create a twitter post using object literal 
+const post = {
+    username: "@shradhakhapra",
+    content: "This is my #firstpost",
+    likes: 150,
+    reposts: 5,
+    tags: ["@apnacollege" , "@delta"]
+};
+
+// we can access our values using get values
+post["content"]; // by this method // we  can also preffer this method whenever we will use  variable 
+post.content; // or  by this method  
+
+// javascript automatically converts key into the string .
+const obj = {
+    1: "a",
+    2: "b",
+    true: "c",
+    null: "d",
+    undefined: "e"
+};
+
+// add or update a value 
+const student = {
+    name: "shradha",
+    age: 23,
+    marks: 94.4,
+    city: "Delhi"
+};
+
+// if we have to update a value then we haVE to simply
+Object.key = "new value"; // here we assign new value to the variable 
+Object.key // you will get your updated value 
+student.city = "Mumbai";
+student.city // now this time we get mumbai 
+student.gender = "female";
+student.gender // here we get female 
+student.marks = "A";
+student.marks // here we get grade "A"
+
+// if we want to delete  then we apply
+delete student.marks;
+delete student.city; 
+
+// example of creating object of objects 
+const classInfo = {
+    aman: {
+        grade: "A+",
+        city: "Delhi"
+    },
+    shradha: {
+        grade: "A",
+        city: "Pune"
+    },
+    karan: {
+        grade: "0",
+        city: "Mumbai"
+    }
+
+};
+
+// with the help of dot operator we can access each single value.
+
+
+
+
+
+
 
 
 
