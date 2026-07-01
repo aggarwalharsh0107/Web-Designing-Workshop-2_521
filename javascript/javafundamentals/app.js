@@ -953,12 +953,235 @@ Person.city = "New York";
 Person.country = "United States";
 console.log(Person);
 
+// lecture 06 functions 
+// functions are basically used to perform  a specific type of work ..
+// we can call the function many times we want 
+// in functionc order is very important 
+// the value we pass are always stored in the order wise format..  
+// after using the return keyword the function automatically stops 
+
+function hello() {
+    console.log("hello");
+}
+hello();
+
+function  printName(){
+    console.log("apna college");
+    console.log("shradha khapra");
+}
+printName();
+
+function print1to5() {
+    for(let i=1; i<=5; i++) {
+        console.log(i);
+    }
+}
+print1to5();// with the help of this we can call the function 
+
+function isAdult()  {
+    let age  = 18;
+    if (age >= 18) {
+        console.log("adult");
+    }else {
+        console.log("not adult");
+    }
+}
+isAdult();
+
+// create a function that prints the poem 
+function printPoem() {
+    console.log("Twinkle Twinkle, Little star");
+    console.log("how i wonder what you are")
+}
+printPoem();
+
+// create a function to roll a dice & always display the value of the dice(1  to 6 )
+function rollDice() {
+    let rand = Math.floor(Math.random() * 6) + 1;
+    console.log(rand);
+}
+rollDice(); // here we again call the function 
+
+// now we study about function with argument 
+function printInfo(name , age) {
+    console.log(`${name}'s age is ${age}.`);
+}
+printInfo("shradha" , 23);
+printInfo("rajat" , 19);
+printInfo("karan");
+
+// create a function to add the sum 
+function sum(a , b) {
+    console.log(a+b);
+}
+sum(4 , 5);
+sum(7 , 8);
+
+// create a function that gives us the average of three numbers .
+function calcAvg(a ,  b, c ) {
+    let avg = (a+b+c)/3;
+    console.log(avg);
+}
+calcAvg(2 ,4 , 6);
+
+
+// create a function that prints the multiplication table of a number
+function printTable(n) {
+    for(let i=n; i<=n*10; i+=n) {
+        console.log(i);
+    }
+}
+
+printTable(n); // here n can be any integer 
+
+
+// use of return keyword 
+function isAdult(age) {
+    if(age >= 18) {
+        return "adult";
+    }else {
+        return "not adult";
+    }
+}
+// in return statement always single value is returned .. 
+
+// create a function that returns the sum of numbers from 1 to n.
+function getSum(n) {
+    let sum = 0;
+
+    for(let i=1; i<=n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+// create a function that returns the concatenation of all strings in an array.... 
+
+let str = ["hi" , "hello" , "bye" , "!"];
+
+function concat(str) {
+    let result;
+
+    for(let i=0; i<str.length; i++) {
+        result += str[i];
+    }
+
+    return result;    
+}
+
+concat(str);// here  we call our function
+
+// function scope 
+// Global Scope can be used anywhere ..
+// function scope is more specific than global scope ..
+// we can not access any variable outside the function ..
+let sum = 54; // Global Scope
+
+function calSum(a , b) {
+    let sum = a+b; // Function scope 
+    console.log(sum);
+}
+calSum(1 , 2);
+
+
+// BLOCK SCOPE
+
+
+// Now if we talk about block scope here we use curly braces 
+{
+    let a = 25;
+}
+console.log(a); // here we can not access a as it is  outside the  scope
+
+for(let i=1; i<=5; i++) {
+    console.log(i); // here block scope is applied 
+}
+
+console.log(i);// here we can not access this i as this is outside the scope 
+
+
+let age = 25;
+if(age >= 18) {
+    let str = "adult";
+
+}
+
+console.log(str); //here we can not access this str variable as this is outside the scope 
+
+let age = 25;
+if(age >= 18) {
+    let str = "adult";
+    console.log(str); // here we can access this str variable as this inside the scope .
+}
+
+
+// LEXICAL SCOPE
+
+
+// now we talk about lexical scope and use nested function 
+// with the help of lexical scope we can use variable of outside function in the inside function 
+// and the variable of inside function can not be  accessible  in the outside function
+// as the lexical scope work from outer to inner not from inner to outer.. 
+
+function outerFunc() {
+    let x = 5;
+    let y = 6;
+    function innerFunc() {
+        console.log(x);
+        console.log(y);
+    }
+
+    innerFunc();
+}
 
 
 
 
+function outerFunc() {
+    let x = 5;
+    let y = 6;
+    function innerFunc() {
+        let a = 10;
+        console.log(x); // here we can not access a variable as it is declare in inside function  and  call in the outside function 
+        console.log(y);
+    }
+    console.log(a);
+    innerFunc();
+}
 
 
+// practice question based on scope 
+// koi bhi tab print  hoti hai jab ham uske function ko call krte hai
+let greet = "hello"; // global scope 
+
+function changeGreet() {
+    let greet = "namaste"; // function scope
+    console.log(greet);
+
+    function innerGreet() {
+        console.log(greet); // lexical scope 
+    }
+    innerGreet();
+}
+
+console.log(greet);
+changeGreet();
+
+// function expresiion
+
+// in function expression we store the function into the variable 
+// in this function name is not used 
+// in this case we call the function with the help of the variable or you say with the name of the variable.. 
+let sum = function(a , b) {
+    return a + b;
+} 
+sum(); // call the function with the name of the variable 
+
+
+let hello = function() {
+    console.log("hello");
+}
+hello();
 
 
 
