@@ -928,13 +928,30 @@ let guess = prompt("guess the number");
     }
  }
 
- 
+ // practice questions of lecture 5 
+ // practice question 1 create a programme that generates a random number representing a dice roll 
+ let dice = Math.floor(Math.random() * 6) + 1;
+ console.log(dice);
 
+ // practice question 2 Createanobjectrepresentingacarthatstoresthefollowingpropertiesforthecar:name,model,color.Printthecar’sname.
 
+const car = {
+    name: "Maruti Suzuki",
+    model: "Maruti Suzuki Dzire",
+    color: "white",
+};
 
+console.log(car.name);
 
-
-
+// praactice question 3 CreateanobjectPersonwiththeirname,ageandcity.Edittheircity’soriginalvaluetochangeitto“NewYork”.AddanewpropertycountryandsetittotheUnitedStates.
+const Person = {
+    name: "Jane Doe",
+    age: 21,
+    city: "New Jersey",
+};
+Person.city = "New York";
+Person.country = "United States";
+console.log(Person);
 
 
 
