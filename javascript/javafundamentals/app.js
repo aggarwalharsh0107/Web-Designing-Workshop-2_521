@@ -859,6 +859,78 @@ const classInfo = {
 
 // with the help of dot operator we can access each single value.
 
+// now we are creating array of objects 
+const classInfo = [
+    {
+      name: "aman",
+      grade: "A+",
+      city: "Delhi"
+    },
+    {
+      name: "Shradha",
+      grade: "A",
+      city: "Pune"
+    },
+    {
+      name: "Karan",
+      grade: "0",
+      city: "Mumbai"
+    }
+];
+// in case of array we can access the element with the help of our index..
+// example classInfo[2].grade   
+
+// if we want to print value of pi we write as
+Math.PI
+// if we want to print the value of E
+Math.E
+
+Math.abs(12); // here we get value 12
+Math.abs(-12.5);// here we get the value 12.5
+
+Math.pow(2 ,4);//here we get the value 16
+Math.pow(2 , 5);// here we get the value 32
+// Math.floor() function smallest nearest integer ke pass roundoff karta hai 
+
+Math.floor(5);//here we get the value 5
+Math.floor(5.9999);// here we get the value 5
+Math.floor(-5.5);// here we get the value -6
+
+Math.ceil(5);// here we get the value 5
+Math.ceil(5.5);// here we get the value 6
+
+// practice question based on Math.random() function 
+Math.floor(Math.random() * 100) + 1;
+Math.floor(Math.random() * 5) + 1;
+
+// if we want a number in a particular range rather than starting from 1 then 
+// for example we want numbers  from 21 to 25 
+// then we apply Math.floor(Math.random()  * 5) + 20 ;
+
+// create a guessing game 
+const max = prompt("enter the max number");
+const random = Math.floor(Math.random() * max) + 1;
+let guess = prompt("guess the number");
+
+ while(true) {
+    if(guess == "quit") {
+        console.log("user quit");
+        break;
+    }
+
+    if(guess == random) {
+        console.log("you are right! congrats !!random number was" , random);
+        break;
+    }else if(guess < random) {
+        guess = prompt(" hint: your guess was too small . please try again");
+    } else {
+        guess = prompt("hint: your guess was too large,. please try again");
+    }
+ }
+
+ 
+
+
 
 
 
